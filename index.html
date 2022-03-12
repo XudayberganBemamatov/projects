@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administrator paneli</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Administrator paneli</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Bosh sahifa</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="So'rovni kiriting:" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Izlash</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="katigories.html" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Kategoriyalar</button>
+    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="maqolalar.html" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Maqolalar</button>
+    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="kamentariyalar.html" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Qamentariyalar</button>
+    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="aloqa.html" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Aloqa</button>
+  </div>
+		</div>
+		<div class="col-md-9">
+		<p class="text-right"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Qo'shish</button></p>
+			
+			<p>Maqolalarni boshqarish</p>
+			<table class="table">
+			  <thead class="table-dark">
+			    <th>№</th>
+			    <th>Maqola nomi</th>
+			    <th>Muallifi</th>
+			    <th>sanasi</th>
+			    <th>Amallar</th>
+			  </thead>
+			  <tbody>
+			  <tr>
+			    <td>1</td>
+			    <td>Yanggilik</td>
+			    <td>Boltayev I</td>
+			    <td>03.03.2022</td>
+			    <td>
+			    	<button type="button" class="btn btn-primary">Tahrirlash</button>
+					<button type="button" class="btn btn-danger">O'chirish</button>
+			    </td>
+			   </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Yanggi maqola qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Maqola sarlavhasi</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Maqola Content</label>
+            <textarea rows="5" cols="10" class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
+        <button type="button" class="btn btn-primary">Saqlash</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
